@@ -47,6 +47,7 @@
 		F9EE1BCE1EF75E0A002DE95B /* BuildTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuildTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9EE1BD21EF75E0A002DE95B /* BuildTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildTestUITests.swift; sourceTree = "<group>"; };
 		F9EE1BD41EF75E0A002DE95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9EE1BE01EF7CF5C002DE95B /* BuildTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BuildTest.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		F9EE1BB11EF75E09002DE95B /* BuildTest */ = {
 			isa = PBXGroup;
 			children = (
+				F9EE1BE01EF7CF5C002DE95B /* BuildTest.entitlements */,
 				F9EE1BB21EF75E09002DE95B /* AppDelegate.swift */,
 				F9EE1BB41EF75E09002DE95B /* ViewController.swift */,
 				F9EE1BB61EF75E09002DE95B /* Main.storyboard */,
@@ -195,6 +197,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 38HYQS5SV4;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					F9EE1BC21EF75E0A002DE95B = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -417,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BuildTest/BuildTest.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 38HYQS5SV4;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
@@ -434,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BuildTest/BuildTest.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 38HYQS5SV4;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
